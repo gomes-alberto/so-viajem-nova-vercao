@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X} from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +19,7 @@ function Header() {
     }, []);
 
     return (
-        <header className="bg-white shadow-md">
+        <header className="fixed top-0 left-0 right-0 z-50 bg-bg-page shadow-md">
             <div className="max-w-6xl mx-auto px-6 w-full flex items-center justify-between h-16">
 
                 {/* Logo */}
@@ -66,7 +66,7 @@ function Header() {
 
             {/* Menu mobile */}
             {/* Menu mobile com uma transição suave */}
-            <div className={`md:hidden bg-white border-t border-gray-100 overflow-hidden transition-all duration-300 ease-in-out ${
+            <div className={`md:hidden bg-bg-page border-t border-gray-100 overflow-hidden transition-all duration-300 ease-in-out ${
                 isMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
             }`}>
                 <div className="px-6 py-4 flex flex-col gap-4">
