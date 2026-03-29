@@ -23,7 +23,11 @@ function Header() {
             <div className="max-w-6xl mx-auto px-6 w-full flex items-center justify-between h-16">
 
                 {/* Logo */}
-                <a href="#home" className="text-xl font-bold text-primary">
+                <a 
+                    href="#home"
+                    className="text-xl font-bold text-primary"
+                    onClick={() => setIsMenuOpen(false)}
+                >
                     So Viajem ✈️
                 </a>
 
