@@ -1,9 +1,15 @@
+import useScrollAnimation from '../../hooks/useScrollAnimation'
+
 function Hero() {
+    const { ref, isVisible } = useScrollAnimation()
     return (
-        <section id="home" className="bg-white min-h-screen flex items-center pt-24 md:pt-16">
+        <section id="home" className="bg-white min-h-screen flex items-center pt-24 md:pt-16 pb-12">
 
             <div className="max-w-6xl mx-auto px-6">
-                <div className="flex flex-col-reverse md:flex-row items-center gap-12">
+                <div 
+                    ref={ref}
+                    className={`flex flex-col-reverse md:flex-row items-center gap-12 animate-on-scroll ${isVisible ? 'visible' : ''}`}
+                >
                     
                     {/* Lado esquerdo — texto */}
                     <div className="flex-1 text-center md:text-left">
