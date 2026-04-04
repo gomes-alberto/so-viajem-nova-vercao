@@ -32,7 +32,7 @@ function Benefits() {
                             
                             <div
                                 key={benefit.id}
-                                className={`bg-white rounded-2xl p-6 shadow-sm animate-on-scroll ${isVisible ? 'visible' : ''} delay-${(index + 1) * 100}`}
+                                className={`bg-white rounded-2xl p-6 shadow-sm animate-on-scroll ${isVisible ? 'visible' : ''} delay-${(index + 1) * 100} card-hover`}
                             >
 
                                 {/* Ícone */}
