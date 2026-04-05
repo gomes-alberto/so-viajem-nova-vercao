@@ -46,7 +46,7 @@ function CallToAction() {
                     <form onSubmit={handleSubmit}
                     className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto bg-white p-2 rounded-xl shadow-sm"
                     >
-                        <input type="email" placeholder="O teu email" value={email}
+                        <input type="email" placeholder="Digite seu email" value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             className="flex-1 px-4 py-3 rounded-lg outline-none text-text-title placeholder:text-gray-400"
                             required
